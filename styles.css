@@ -1,0 +1,119 @@
+.body{
+    background-color: rgb(223, 216, 207);
+}
+
+.header{
+    background-color: black;
+    padding: 15px;
+    margin: -9px;
+}
+.bio{
+    display: flex;
+    flex-direction: row;
+}
+.photo>img{
+    width: auto;
+    height: 100px;
+    margin: 10px;
+}
+.navinfo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.name{
+    margin-top: -20px;
+    color: white;
+    margin-left: 20px;
+}
+.options{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+.options:hover{
+    background-color: rgb(78, 2, 2);
+    color: yellow;
+    box-shadow:  0 0 30px greenyellow;
+}
+.ran{
+    transition: transform .5s;
+}
+.ran:hover{
+    transform: scale(2);
+}
+
+.about-me, .connect-with-me, .projects{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin: -9px;
+    font-size: 18px;
+}
+.about-me-tagline{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(0, 17, 255);
+}
+
+.game-names{
+    font-size: 28px;
+    text-align: center;
+    color: rgb(255, 0, 115);
+    margin-bottom: -30px;
+}
+
+.game-img{
+    width: 730px;
+    height: auto;
+    margin: 60px;
+    transition: transform .5s;
+}
+.game-img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px red;
+}
+.contact-logo{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    transition: transform .2s;
+    border-radius: 100%;
+}
+.contact-logo:hover{
+    transform: scale(1.2);
+    box-shadow:  0 0 30px rgb(255, 72, 0);
+}
+.contact-input{
+    margin-bottom: 20px;
+}
+.footer{
+    background-color: black;
+    margin: -9px;
+    padding-bottom: 12px;
+    padding-right: 250px;
+    font-size: 17px;
+    color: white;
+    position: fixed;
+    right: 1px;
+    bottom: 0px;
+    height: 35px;
+    width: 100%;
+    text-align: right;
+}
+.heart{
+    color: red;
+    display: inline-block;
+    animation: heart_animation infinite;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes heart_animation {
+    0% {transform: scale(1);}
+    50%  {transform: scale(2.2);}
+   100% {transform: scale(1);}
+}
